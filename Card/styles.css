@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #F3BA2F;
+    font-family: 'Cousine', monospace;
+
+}
+main{
+    background: rgb(52,52,52);
+background: linear-gradient(84deg, rgba(52,52,52,0.9364788151588761) 35%, rgba(52,52,52,0.7936216723017332) 72%, rgba(52,52,52,0.6759746134782038) 99%);
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    box-shadow: 0 8px 32px 0 rgba(30, 31, 46, 0.582);
+    background-color: #343434;
+    position: relative;
+    width: 500px;
+    height: 290px;
+    border-radius: 30px;
+    border: 3px solid #313131;
+}
+.card .world{
+    position: absolute;
+    width: 100%;
+}
+.details{
+    padding: .8rem 1.5rem;
+}
+.card .logo{
+
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.logo img{
+    width: 1.5rem;
+    margin-bottom: .3rem;
+}
+.logo span{
+    font-size: .45rem;
+}
+.logo .binance{
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.card-number{
+    position: absolute;
+    top: 115px;
+    left: 45px;
+    display: flex;
+    align-items: center;
+}
+.card-number .chip{
+    width: 3.6rem;
+    margin-right: 1rem;
+}
+.card-number .images{
+    display: flex;
+    align-items: center;
+}
+.card-number .signal{
+    width: 1.4rem;
+    margin-right: .5rem;
+}
+.card-number .number h3{
+    font-size: 1.5rem;
+}
+
+.owner-name{
+    position: absolute;
+    top: 200px;
+    left: 55px;
+    
+}
+.owner-name p{
+    font-size: .7rem;
+    margin-left: 1rem;
+}
+.footer{
+    position: absolute;
+    top: 260px;
+    left: 400px;
+}
+.footer p{
+    font-size: .7rem;
+}
+
+.fillout{
+    background: rgba(190, 181, 181, 0.107);
+    box-shadow: 0 8px 32px 0 rgba(30, 31, 46, 0.582);
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 20px;
+    width: 30%;
+    padding: 2.5rem;
+}
+.fillout form{
+    display: flex;
+    flex-direction: column;
+}
+.fillout h1{
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+.fillout form label{
+    font-size: .99rem;
+    margin-bottom: .2rem;
+}
+.fillout form input{
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    outline: #F3BA2F;
+    border-radius: 5px;
+}
