@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #273549;
+    font-family: 'Karla', sans-serif;
+    margin: 0 auto;
+}
+.parent-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 0 1em;
+    box-shadow: 5px 5px 20px #111827;
+    background-color: #273549;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5em 2.5rem;
+}
+.text {
+    margin-top: 4em;
+}
+.text h1 {
+    color: #ffff;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.text span {
+    color: #0EA5E9;
+}
+.text p, button {
+    color: #BAE6FD;
+}
+.text p{
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+.btn {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.gen-btn {
+    border-radius: .4rem;
+    padding: 0.8em 1.8em;
+    border: 2px solid #0EA5E9;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #0EA5E9;
+    cursor: pointer;
+   }
+   
+   .gen-btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    background: #0EA5E9;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .gen-btn:hover::before {
+    width: 105%;
+   }
+   
+   .gen-btn:hover {
+    color: #111;
+   }
+ #length-setter{
+    width: 6rem;
+    height: 3rem;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    outline: white;
+    border-radius: .4rem;
+ }  
+.pword-container{
+    margin-top: 2em;
+    border-top: 1px solid #bae5fd8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+.password{
+    text-align: center;
+    padding: .7rem;
+    background: #7dd4fc3d;
+    height: 2.6rem;
+    width: 48%;
+    border-radius: .4rem; 
+    color: #fafafa;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#password-one, #password-one{
+    margin-left: .4rem;
+}
+.copy-btn { 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.fa-copy {
+    color: #064f71;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.701);
+}
+.fa-copy:hover{
+    color: #247397;
+}
+.maker {
+    text-align: center;
+    color: #bae5fd8f;
+    font-size: .8rem;
+}
+@media(max-width: 500px) {
+    .pword-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .password{
+        width: 100%;
+    }
+    .p1{
+        margin-bottom: 1rem;
+    }
+}

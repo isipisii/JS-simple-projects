@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <div class="text">
+                <h1>Generate a <br><span>random password</span></h1>
+                <p>Never use an easy to guess password again.</p>
+            </div>
+            <div class="btn">
+                <button class="gen-btn" onclick="generatePassword()" id="btn">Generate password</button>
+                <input type="text" id="length-setter" placeholder="Set length">
+            </div>
+            <div class="pword-container">
+                <div class="password">
+                    <p id="password-one" id="password-text-one"></p>
+                    <button class="copy-btn" id="copy-one">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+                <div class="password">
+                    <p id="password-two"></p>
+                    <button  class="copy-btn" id="copy-two">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="maker">Made with love by Alessandro Benig.💙</p>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+    <script src="https://kit.fontawesome.com/a86c46f320.js" crossorigin="anonymous"></script>
+</body>
+</html>
